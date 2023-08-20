@@ -7,9 +7,10 @@ team: list[dict] = [
 
 def show_players(players: list[dict]) -> None:
     for player in players:
-        print(
-            f"name: {player['name']}, age: {player['age']}, number: {player['number']}"
-        )
+        name = player["name"]
+        age = player["age"]
+        number = player["number"]
+        print(f"name: {name}, age: {age},number: {number}")
 
 
 def add_player(num: int, name: str, age: int) -> None:
